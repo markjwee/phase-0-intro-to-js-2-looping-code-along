@@ -17,9 +17,16 @@
 // wrapGifts(gifts);
 
 function writeCards(arrayOfNames, eventName) {
-    for(let i = 0; i <arrayOfNames.length; i++){
-        console.log(`Thank you, ${arrayOfNames[i]}, for the wonderful ${eventName} gift!`)
+    let ArrayOfThankYouMessages = []
+      for(let i = 0; i <arrayOfNames.length; i++){
+        ArrayOfThankYouMessages.push(`Thank you, ${arrayOfNames[i]}, for the wonderful ${eventName} gift!`)
+      }
+    return ArrayOfThankYouMessages
+}
+
+function countDown(x) {
+    while (x >= 0) {
+        console.log(x);
+        x--;
     }
-    let newArray = [...arrayOfNames.push("")]
-    return newArray
 }
